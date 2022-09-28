@@ -1,0 +1,90 @@
+/* BACKGROUND */
+@media (max-width: 600px) {
+  .background {
+    background-image: url(../images/mobile.jpg) !important;
+    background-size: cover;
+  }
+}
+/* HERO */
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* FOS */
+@media (min-width: 430px) and (max-width: 730px) {
+  .vertical-center {
+    top: 0;
+    transform: unset;
+    margin-top: 1rem;
+  }
+
+  .hero .text {
+    padding: 0;
+  }
+
+  .fos {
+    top: -8;
+    padding: 0;
+  }
+  form {
+    padding: 0;
+  }
+}
+@media (max-width: 464px) {
+  .vertical-center {
+    top: 0;
+    transform: unset;
+    margin-top: 1rem;
+  }
+
+  .hero .text {
+    padding: 0;
+  }
+
+  .hero .text .title {
+    font-size: x-large;
+  }
+  .hero .text .description {
+    font-weight: 400;
+    font-size: large;
+  }
+
+  .fos {
+    top: 0;
+    padding: 2rem 0 0 0;
+  }
+  .teams .title,
+  .registration .title {
+    margin: 2rem 0;
+  }
+
+  form {
+    padding: 0;
+  }
+}
+
+/* TEAMS */
+
+/* FORM */
+@media (max-width: 660px) {
+  .ctrlqHeaderMast {
+    height: 122px;
+  }
+  .ctrlqFormCard:first-of-type {
+    margin-top: -50px;
+  }
+
+  .ctrlqCenteredContent {
+    width: 90%;
+  }
+}
